@@ -1,0 +1,6 @@
+hscore = 7;
+ascore = 3;
+home = OKLAHOMA;
+away = TEXAS;
+qtr = 3;
+

@@ -1,0 +1,5 @@
+hscore = 28;
+ascore = 28;
+home = OKLAHOMA;
+away = TEXAS;
+qtr = OT 1;

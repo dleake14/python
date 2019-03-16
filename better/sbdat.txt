@@ -1,0 +1,6 @@
+hscore = 35;
+ascore = 35;
+home = Okla St;
+away = TCU;
+qtr = 4;
+
