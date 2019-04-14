@@ -26,7 +26,11 @@ arOut= ['f'] * limit
 for m in range (limit):
     for p in range (limit):
         arOut[p] = message[m,p]
-        print(arOut[p], end="")
-        time.sleep(.05)
+        if m % 5 != 0 or x == 0: 
+            print(arOut[p], end="")
+            time.sleep(.01)
+        if m % 5 == 0 and m != 0:
+            print(arOut[p], end="")
+            time.sleep(.1)
     print(end="\r")
 
