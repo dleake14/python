@@ -1,28 +1,32 @@
 import random, time, string
 
 limit = 20
-x = 0
 message= {}
 
-def get_randString():
-    randRet = ['Q'] * limit
-    for f in range(limit):
-        randRet[f] = random.choice(string.ascii_letters)
+def get_randChar():
+    randRet = random.choice(string.ascii_letters)
     return randRet
 
 
 for x in range(limit):
     if x == 5:
-        message[x] = ("David".center(limit,"*"))
+        for g in range(limit):
+            message[x,g] = ("David".center(limit,"*"))[g]
     if x == 10:
-        message[x] = ("Loves".center(limit,"*"))
+        for g in range(limit):
+            message[x,g] = ("Loves".center(limit,"*"))[g]
     if x == 15:
-        message[x] = ("Laurel".center(limit,"*"))
+        for g in range(limit):
+            message[x,g] = ("Laurel".center(limit,"*"))[g]
+    if x % 5 != 0 or x == 0: 
+        for g in range(limit):
+            message[x,g] = get_randChar()
 
 arOut= ['f'] * limit
-for p in range (limit):
-    arOut = message[p]
-    print(arOut[p], end="")
-    time.sleep(.25)
+for m in range (limit):
+    for p in range (limit):
+        arOut[p] = message[m,p]
+        print(arOut[p], end="")
+        time.sleep(.05)
     print(end="\r")
 
