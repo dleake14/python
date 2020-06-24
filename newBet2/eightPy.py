@@ -1,4 +1,4 @@
-import sys,os
+import sys,os, time
 import curses
 
 home = "home = "
@@ -77,9 +77,10 @@ def draw_menu(stdscr):
 
         # REFRESH
         stdscr.refresh()
-
+# Changing while loop to timer instead of input
         # WAIT
-        k = stdscr.getch()
+        time.sleep(1)
+        k = 'F'
 
 def main():
     curses.wrapper(draw_menu)

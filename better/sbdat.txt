@@ -1,5 +1,5 @@
-hscore = 35;
-ascore = 35;
+hscore = 0;
+ascore = 7;
 home = Okla St;
 away = TCU;
 qtr = 4;
